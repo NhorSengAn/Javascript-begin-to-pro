@@ -1,0 +1,43 @@
+<!-- 7a.
+ 
+create a funcation called 'greet' that displays message 'Hello'
+ in the console. call/ run this function a few times using : great(); -->
+
+<!-- 7b.   
+    Continuing from 7a, add papramter called 'name' to the greet function 
+    and display the message: 'Hello ${name}'
+    call the function a fw times with different name:('Simon')
+
+ -->
+
+<!-- 7c
+        Try calling greet() without a name( it will display 'Hello undifned!')
+        Modify the function so that if 'name' is underfinded, it will display
+        'Hi there' instead
+ -->
+<!-- hint: use an if-statement. Since underfind is a fale value, you can use: of(!name){ to check
+         if'name',  is underfinded} -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise</title>
+  </head>
+  <body>
+    <script>
+      // 7a
+      function greet(name) {
+        if (!name) {
+          console.log("Hello there!");
+        } else {
+          console.log(`Hello ${name}`);
+        }
+      }
+      greet("Smon");
+      greet();
+      greet();
+    </script>
+  </body>
+</html>
