@@ -18,6 +18,11 @@ create a funcation called 'greet' that displays message 'Hello'
 <!-- hint: use an if-statement. Since underfind is a fale value, you can use: of(!name){ to check
          if'name',  is underfinded} -->
 
+<!-- 7d. Create a function convertToFahrenheit(celsius)' that 
+ takes a numberin degrees Celsius and returns a number in degrees
+  Fahrenheit.• Formula: Fahrenheit = (Celsius * 9 / 5) + 32• 
+  convertToFahrenheit(25) => 77 -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,16 +33,36 @@ create a funcation called 'greet' that displays message 'Hello'
   <body>
     <script>
       // 7a
-      function greet(name) {
-        if (!name) {
-          console.log("Hello there!");
-        } else {
-          console.log(`Hello ${name}`);
+      // function greet(name) {
+      //   if (!name) {
+      //     console.log("Hello there!");
+      //   } else {
+      //     console.log(`Hello ${name}`);
+      //   }
+      // }
+      // greet("Smon");
+      // greet();
+      // greet();
+
+      function convertToFahrenheit(celsius) {
+        return (celsius * 9) / 5 + 32;
+      }
+
+      function convertToCelsius(fahrenheit) {
+        return ((fahrenheit - 32) * 5) / 9;
+      }
+
+      function convertTemperature(degrees, unit) {
+        if (unit === "C") {
+          return `${convertToFahrenheit(degrees)}F`;
+        } else if (unit === "F") {
+          return `${convertToCelsius(degrees)}C`;
         }
       }
-      greet("Smon");
-      greet();
-      greet();
+
+      console.log(convertTemperature(25, "C"));
+      console.log(convertTemperature(86, "F"));
     </script>
   </body>
 </html>
+
