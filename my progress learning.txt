@@ -1,0 +1,180 @@
+1. Introduction
+✅ JavaScript basics
+✅ Running JavaScript
+✅ Console
+✅ Comments
+
+2. Variables
+✅ let
+✅ const
+✅ var
+✅ Naming variables
+
+3. Data Types
+✅ String
+✅ Number
+✅ Boolean
+✅ null
+✅ undefined
+
+4. Operators
+✅ Arithmetic operators
++
+-
+*
+/
+%
+✅ Comparison operators
+>
+<
+>=
+<=
+==
+===
+!=
+!==
+✅ Logical operators
+&&
+||
+!
+
+
+5. Conditionals
+✅ if
+✅ else
+✅ else if
+✅ Nested conditions
+
+
+6. Functions
+✅ Function declaration
+✅ Parameters
+✅ Arguments
+✅ return
+✅ Local variables
+✅ Calling functions
+
+
+7. Scope
+✅ Global scope
+✅ Local scope
+
+
+8. Objects
+✅ Object literals
+✅ Properties
+✅ Dot notation
+✅ Bracket notation
+✅ Nested objects
+✅ Object methods
+✅ this
+✅ Updating properties
+✅ Deleting properties
+
+
+9. Arrays
+✅ Creating arrays
+✅ Array indexing
+✅ .length
+✅ .push()
+✅ .pop()
+✅ .shift()
+✅ .unshift()
+✅ .toString()
+
+
+
+10. Loops
+✅ for
+✅ Loop through arrays
+
+
+11. Random Numbers
+✅ Math.random()
+
+
+12. JSON
+✅ JSON.stringify()
+✅ JSON.parse()
+
+13. Local Storage
+✅ localStorage.setItem()
+✅ localStorage.getItem()
+✅ localStorage.removeItem()
+
+14. Browser APIs
+✅ alert()
+
+15. Mini Project
+✅ Rock Paper Scissors
+✅ Save score with Local Storage
+
+
+16. Node.js Basics
+✅ require()
+✅ module.exports
+✅ Multiple file projects
+
+
+🟡 Topics Still to Learn (likely later in the course)
+Arrays
+⬜ .forEach()
+⬜ .map()
+⬜ .filter()
+⬜ .find()
+⬜ .reduce()
+⬜ .every()
+⬜ .some()
+⬜ .sort()
+Functions
+⬜ Arrow functions
+⬜ Callback functions
+⬜ Higher-order functions
+ES6 Features
+⬜ Template literals (you've used them, but not fully explored them)
+⬜ Destructuring
+⬜ Spread operator (...)
+⬜ Rest parameters
+⬜ Default parameters
+Asynchronous JavaScript
+⬜ setTimeout()
+⬜ setInterval()
+⬜ Promises
+⬜ async/await
+⬜ fetch()
+DOM
+⬜ document.querySelector()
+⬜ DOM events
+⬜ Event listeners
+⬜ Forms
+⬜ DOM manipulation
+Advanced
+⬜ Classes
+⬜ OOP
+⬜ Modules (import / export)
+⬜ Error handling (try...catch).
+
+
+📊 My Progress
+
+
+| Section           | Status    |
+| ----------------- | --------- |
+| JavaScript Basics | ✅         |
+| Variables         | ✅         |
+| Data Types        | ✅         |
+| Operators         | ✅         |
+| Conditions        | ✅         |
+| Functions         | ✅         |
+| Objects           | ✅         |
+| Arrays (Basic)    | ✅         |
+| Loops             | ✅         |
+| JSON              | ✅         |
+| Local Storage     | ✅         |
+| Node.js Modules   | ✅         |
+| Mini Project      | ✅         |
+| DOM               | ⏳ Not yet |
+| Async JavaScript  | ⏳ Not yet |
+| Array Methods     | ⏳ Not yet |
+| ES6 Advanced      | ⏳ Not yet |
+| OOP               | ⏳ Not yet |
