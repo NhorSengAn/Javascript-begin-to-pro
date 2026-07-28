@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <button onclick="updateCalculation('1')">1</button>
+    <button onclick="updateCalculation('+')">+</button>
+    <button onclick="updateCalculation('2')">2</button>
+    <script>
+      const product = {
+        name: "basketball",
+        price: 2095,
+        "delivery-times": "3 days",
+      };
+
+      //   console.log(product["delivery-times"]);
+      //   const { name, price } = product;
+      //   console.log(price);
+      product.price += 500;
+      //   console.log(product.price);
+      //   product.price = product.price + 500;
+      //   product.price += 500;
+      //   console.log(product);
+
+      const product1 = {
+        name: "Basketball",
+        price: 2095,
+      };
+      const product2 = {
+        name: "Football",
+        price: 1895,
+      };
+
+      function comparePrice(product1, product2) {
+        if (product1.price > product2.price) {
+          return product2; //return value
+        }
+      }
+      console.log(comparePrice(product1, product2));
+
+      const product4 = {
+        name: "Basketball",
+        price: 2095,
+      };
+
+      const product5 = {
+        name: "Football",
+        price: 1895,
+      };
+
+      // function isSameProduct(product1, product2) {
+      //   if (product1.name === product2.name && product1.price === product2.price) {
+      //     return true;
+      //   } else {
+      //     return false;
+      //   }
+      // }
+
+      // we can try with this code as well
+
+      function isSameProduct(product4, product5) {
+        return (
+          product1.name === product2.name && product1.price === product2.price
+        );
+      }
+
+      console.log(isSameProduct(product4, product5));
+
+      const text = "Good morning";
+      console.log(text.toLowerCase());
+      console.log(text.toUpperCase());
+
+      const text2 = "Test";
+      console.log(text.repeat(3));
+
+      let calculation = localStorage.getItem("calculation") || "";
+      // Step 2 — Every time you update the calculation
+
+      // calculation += "1";
+      // localStorage.setItem("calculation", calculation);
+
+      function updateCalculation(value) {
+        calculation += value;
+        localStorage.setItem("calculation", calculation);
+        console.log(calculation);
+      }
+    </script>
+  </body>
+</html>
+<!-- 
+    Lesson 8 Exercises - Objects
+
+    8a. Let's say in the Amazon project, we have a basketball product. Thisproduct has a name of 'basketball', a price of 2095 cents. Create anobject to represent this product and display it in the console.
+
+    8b. Continuing from 8a, let's say we want to increase the price by 500cents. Use dot notation to increase the price, and display theupdated object in the console.
+
+    8c. Using bracket notation, add a property ‘delivery-time' to the objectwith the value '3 days'. Display the updated object in the console.
+    
+    8d. Create a function ‘comparePrice(productl, product2)', which takes 2products (with ‘name' and ‘price' properties) and returns the productthat is less expensive. Create 2 products and try out the function.
+
+    8f. Using Google or an A.l. tool, search how to convert a string to alllowercase with JavaScript ('Good Morning' => 'good morning')
+
+    8g. Search how to repeat a string many times ('test' 2 times => 'testtest')
+
+    8h. We'll add localStorage to the calculator project. First, make a copy ofthe project from exercise 7j (see the solution for 7j if needed).• Whenever we update the calculation, save it using .setItem()• When the page first loads, get the calculation using .getItem()• Use a default value of " if a calculation doesn't exist in local storage
+-->
