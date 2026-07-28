@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Project</title>
+  </head>
+  <body>
+    <p>Youtube Subscribe button</p>
+    <button onclick="subscribe()" class="js-subscribe-button">Subscribe</button>
+
+    <p>Amazon Shipping Calculator</p>
+    <input
+      type="text"
+      placeholder="Cost of order"
+      class="js-cost-input"
+      onkeydown="handleCostkeydown(event)"
+    />
+    <button onclick="calculateTotal()">Calculator</button>
+    <p class="js-total-cost"></p>
+    <script>
+
+      window
+      function handleCostkeydown(event) {
+        if (event.key === "Enter") {
+          calculateTotal();
+        }
+      }
+
+      function calculateTotal() {
+        const inputElement = document.querySelector(".js-cost-input");
+        let cost = Number(inputElement.value);
+        console.log(typeof cost);
+        console.log(cost);
+        if (cost < 40) {
+          cost = cost + 10; // this call a type Coercion
+        }
+
+        document.querySelector(".js-total-cost").innerHTML = `$ ${cost}`;
+      }
+
+      // document.querySelector(".js-subscribe").innerHTML = "Subscribed"; //
+
+      function subscribe() {
+        const buttonElement = document.querySelector(".js-subscribe-button");
+        if (buttonElement.innerText === "Subscribe") {
+          buttonElement.innerText = "Subscribed";
+        } else {
+          buttonElement.innerText = "Subscribe";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="js-button">Second Button</button>
+    <script>
+      console.log(document.querySelector("button").innerHTML);
+      document.querySelector("button").innerHTML = "change it now";
+      document.querySelector(".js-button").innerHTML =
+        "Second button is Complete change"; // it's call selector
+
+      //   console.log(document.title);
+      //   document.title = "Change";
+      //   document.body.innerHTML = "Hello world";
+      //   doucment.title = "good morning";
+      //   console.log(document.body.innerHTML);
+      //   console.log(typeof document.body.innerHTML);
+
+      //   document.body.innerHTML = "String has been change";
+
+      //   document.body.innerHTML = `<button> Good night </button>`;
+
+      // what is document.querySelector();?
+      //  querySelector :
+      //  lets us get any element from the page and put it
+      // inside javasript
+
+      
+    </script>
+  </body>
+</html>
+
+//DOM combines JS and HTML together it give JS full control of the webpage
