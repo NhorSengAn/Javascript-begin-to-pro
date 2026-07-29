@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="Enter your name"
+      class="js-input-text"
+      onkeyup="filterName()"
+    />
+    <button class="btn-search">Search</button>
+    <p class="text-name"></p>
+    <script>
+      function getInputValue() {
+        return document.querySelector(".js-input-text").value;
+      }
+      function filterName() {
+        const name = getInputValue();
+        document.querySelector(".text-name").innerHTML = `${name}`;
+      }
+    </script>
+  </body>
+</html>

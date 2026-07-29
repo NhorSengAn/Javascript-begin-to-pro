@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate</title>
+  </head>
+  <body>
+    <p class="result"></p>
+    <span class="total"></span>
+    <button onclick="pickNumber(0)">0</button>
+    <button onclick="pickNumber(1)">1</button>
+    <button onclick="pickNumber(2)">2</button>
+    <button onclick="pickNumber(3)">3</button>
+    <button onclick="pickNumber(4)">4</button>
+    <button onclick="pickNumber(5)">5</button>
+    <button onclick="pickNumber(6)">6</button>
+    <button onclick="pickNumber(7)">7</button>
+    <button onclick="pickNumber(8)">8</button>
+    <button onclick="pickNumber(9)">9</button>
+    <button onclick="pickOperator('+')">+</button>
+    <button onclick="pickOperator('-')">-</button>
+    <button onclick="pickOperator('*')">*</button>
+    <button onclick="pickOperator('/')">/</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="clearData()">Clear</button>
+
+    <script>
+      let currentInput = "";
+      let firstNumber = null; // store the number before operator
+      let operator = null;
+
+      function pickNumber(num) {
+        currentInput += num;
+        updateDisplay();
+      }
+
+      function pickOperator(op) {
+        firstNumber = Number(currentInput);
+        operator = op;
+        currentInput = ""; //reset so next digits build second number
+        updateDisplay();
+      }
+
+      function calculate() {
+        const secondNumber = Number(currentInput);
+        let total = 0;
+
+        if (operator === "+") {
+          total = firstNumber + secondNumber;
+        } else if (operator === "-") {
+          total = firstNumber - secondNumber;
+        } else if (operator === "*") {
+          total = firstNumber * secondNumber;
+        } else if (operator === "/") {
+          total = firstNumber / secondNumber;
+        }
+        document.querySelector(".result").innerHTML =
+          `${firstNumber} ${operator} ${secondNumber} = ${total}`;
+      }
+
+      function clearData() {
+        currentInput = "";
+        firstNumber = null;
+        operator = null;
+        document.querySelector(".result").innerHTML = "";
+      }
+
+      function updateDisplay() {
+        if (operator) {
+          document.querySelector(".result").innerHTML =
+            `${firstNumber}${operator}${currentInput}`;
+        } else {
+          document.querySelector(".result").innerHTML = currentInput;
+        }
+      }
+    </script>
+  </body>
+</html>

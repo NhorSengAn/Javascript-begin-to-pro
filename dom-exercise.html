@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Exercise</title>
+  </head>
+  <body>
+    <button>9a</button> <br />
+    <br />
+    <button class="js-button">9a</button> <br />
+    <br />
+
+    <button onclick="choseHead()">Heads</button>
+    <button onclick="choseTails()">tails</button>
+    <p class="result"></p>
+
+    <input
+      type="text"
+      placeholder="Name"
+      class="js-input-text"
+      onkeydown="handleCostkeydown(event)"
+    />
+    <button onclick="submitName()">Submit</button>
+    <p class="result"></p>
+
+    <script>
+      //   console.log(document.querySelector("button"));
+      //   console.log("button");
+      //   document.querySelector(".js-button").innerHTML = "9B done!";
+
+      //   function choseHead() {
+      //     document.querySelector(".result").innerHTML = "You chose heads";
+      //   }
+
+      //   function choseTails() {
+      //     document.querySelector(".result").innerHTML = "You chose Tails";
+      //   }
+      function getInputValue() {
+        return document.querySelector(".js-input-text").value;
+      }
+
+      function submitName() {
+        const name = getInputValue();
+        // const inputElement = document.querySelector(".js-input-text");
+
+        document.querySelector(".result").innerHTML = `Your name is ${name}`;
+      }
+
+      function handleCostkeydown(event) {
+        if (event.key === "Enter") {
+          submitName();
+        }
+      }
+    </script>
+  </body>
+</html>

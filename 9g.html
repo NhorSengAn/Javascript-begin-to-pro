@@ -34,12 +34,13 @@
           cost = cost + 10; // this call a type Coercion
         }
 
-        document.querySelector(".js-total-cost").innerHTML = `$ ${cost}`;
+        document.querySelector(".js-total-cost").innerHTML =
+          `$ ${cost.toFixed(2)}`;
       }
 
       // document.querySelector(".js-subscribe").innerHTML = "Subscribed"; //
 
-      function subscribe() {  
+      function subscribe() {
         const buttonElement = document.querySelector(".js-subscribe-button");
         if (buttonElement.innerText === "Subscribe") {
           buttonElement.innerText = "Subscribed";

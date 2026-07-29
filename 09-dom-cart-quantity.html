@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add cart</title>
+  </head>
+  <body>
+    <button onclick="console.log(`cartQuanity is : ${cartQuanity}`)">
+      Show Quantity
+    </button>
+
+    <button onclick="increase1()">Show Quantity Add to cart</button>
+    <button onclick="increase1()">+1</button>
+    <button onclick="increase2()">+2</button>
+    <button onclick="increase3()">+3</button>
+    <button onclick="increase4()">+3</button>
+    <button onclick="increase5()">+3</button>
+    <button onclick="resetQuantity()">Rest cart</button>
+    <button onclick="decrease2()">-2</button>
+    <button onclick="decrease4()">-4</button>
+
+    <p class="result"></p>
+    <script>
+      let cartQuanity = 0;
+
+      function increase1() {
+        cartQuanity += 1;
+        console.log(`CartQuantity is ${cartQuanity}`);
+        showResult();
+      }
+      function increase2() {
+        cartQuanity += 2;
+        console.log(`CartQuantity is ${cartQuanity}`);
+        showResult();
+      }
+
+      function increase3() {
+        cartQuanity += 3;
+        console.log(`CartQuantity is ${cartQuanity}`);
+        showResult();
+      }
+
+      function increase4() {
+        cartQuanity += 4;
+        console.log(`CartQuantity is ${cartQuanity}`);
+        showResult();
+      }
+
+      function increase5() {
+        cartQuanity += 4;
+        console.log(`CartQuantity is ${cartQuanity}`);
+        showResult();
+      }
+
+      function decrease2() {
+        cartQuanity -= 2;
+        showResult();
+      }
+
+      function decrease4() {
+        cartQuanity -= 4;
+        showResult();
+      }
+
+      function resetQuantity() {
+        cartQuanity = 0;
+        showResult();
+      }
+
+      function showResult() {
+        document.querySelector(".result").innerHTML =
+          `Cart quantity : ${cartQuanity}`;
+      }
+    </script>
+  </body>
+</html>
