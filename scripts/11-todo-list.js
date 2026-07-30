@@ -1,4 +1,4 @@
-const todoList = ["make dinner", "wash dishes", "play game"];
+const todoList = [];
 renderTodoList();
 
 function renderTodoList() {
@@ -8,11 +8,13 @@ function renderTodoList() {
     const html = `<p>${todo}</p>`;
     todoListHTML += html;
   }
+
   console.log(todoListHTML);
 
   document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
 
+//Input data value
 function addTodo() {
   const inputElement = document.querySelector(".js-name-input");
 

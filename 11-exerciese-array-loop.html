@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array and loop</title>
+  </head>
+  <body>
+    <script>
+      /*
+            const nums = [10, 20, 30];
+
+            nums[2] = 99;
+            console.log(nums);
+
+            nums.push(100);
+      */
+      const arr = [1, 2, 3];
+      //   arr.reverse();
+      //   console.log(arr);
+      const arrayName = ["HI", "Hello world", "world is good"];
+
+      function reverseArray(arr) {
+        arr.reverse();
+
+        return arr;
+      }
+
+      console.log(reverseArray(arr));
+
+      function arrayswapName(arrayName) {
+        arrayName.reverse();
+
+        return arrayName;
+      }
+
+      console.log(arrayswapName(arrayName));
+      /*
+
+            function getLastvalue(array) {
+              const lastIndex = array.length - 1;
+              return array[lastIndex];
+            }
+
+            function getLastStringValue(arrayName) {
+              const lastIndex = arrayName.length - 1;
+              return arrayName[lastIndex];
+            }
+
+            console.log(getLastStringValue(arrayName));
+
+            console.log(getLastvalue(array));
+
+            const nums = [1, 2, 3, 4];
+            console.log(nums.length);
+            console.log(`My number is ${nums[1]}`);
+          */
+    </script>
+  </body>
+</html>
