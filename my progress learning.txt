@@ -157,24 +157,140 @@ Advanced
 
 📊 My Progress
 
+| #  | Topic                                      | Status |
+| -- | ------------------------------------------ | :----: |
+| 1  | JavaScript Basics                          |    ✅   |
+| 2  | Variables (`let`, `const`)                 |    ✅   |
+| 3  | Data Types                                 |    ✅   |
+| 4  | Operators                                  |    ✅   |
+| 5  | Type Conversion                            |    ✅   |
+| 6  | Conditions (`if`, `else`)                  |    ✅   |
+| 7  | Ternary Operator                           |    ✅   |
+| 8  | Logical Operators                          |    ✅   |
+| 9  | Functions                                  |    ✅   |
+| 10 | Parameters                                 |    ✅   |
+| 11 | Return Values                              |    ✅   |
+| 12 | Scope                                      |    ✅   |
+| 13 | Objects                                    |    ✅   |
+| 14 | Arrays (Basic)                             |    ✅   |
+| 15 | Loops (`for`)                              |    ✅   |
+| 16 | JSON                                       |    ✅   |
+| 17 | Local Storage                              |    ✅   |
+| 18 | DOM Manipulation                           |    ✅   |
+| 19 | Events (`onclick`, `onkeydown`, `onkeyup`) |    ✅   |
+| 20 | Forms & Input Handling                     |    ✅   |
+| 21 | Template Literals                          |    ✅   |
+| 22 | Mini Projects                              |    ✅   |
 
-| Section           | Status    |
-| ----------------- | --------- |
-| JavaScript Basics | ✅         |
-| Variables         | ✅         |
-| Data Types        | ✅         |
-| Operators         | ✅         |
-| Conditions        | ✅         |
-| Functions         | ✅         |
-| Objects           | ✅         |
-| Arrays (Basic)    | ✅         |
-| Loops             | ✅         |
-| JSON              | ✅         |
-| Local Storage     | ✅         |
-| Node.js Modules   | ✅         |
-| Mini Project      | ✅         |
-| DOM               | ⏳ Not yet |
-| Async JavaScript  | ⏳ Not yet |
-| Array Methods     | ⏳ Not yet |
-| ES6 Advanced      | ⏳ Not yet |
-| OOP               | ⏳ Not yet |
+🚀 JavaScript Master Roadmap (Before React)
+
+| #  | Topic                                      | Status |
+| -- | ------------------------------------------ | :----: |
+| 1  | JavaScript Basics                          |    ✅   |
+| 2  | Variables (`let`, `const`)                 |    ✅   |
+| 3  | Data Types                                 |    ✅   |
+| 4  | Operators                                  |    ✅   |
+| 5  | Type Conversion                            |    ✅   |
+| 6  | Conditions (`if`, `else`)                  |    ✅   |
+| 7  | Ternary Operator                           |    ✅   |
+| 8  | Logical Operators                          |    ✅   |
+| 9  | Functions                                  |    ✅   |
+| 10 | Parameters                                 |    ✅   |
+| 11 | Return Values                              |    ✅   |
+| 12 | Scope                                      |    ✅   |
+| 13 | Objects                                    |    ✅   |
+| 14 | Arrays (Basic)                             |    ✅   |
+| 15 | Loops (`for`)                              |    ✅   |
+| 16 | JSON                                       |    ✅   |
+| 17 | Local Storage                              |    ✅   |
+| 18 | DOM Manipulation                           |    ✅   |
+| 19 | Events (`onclick`, `onkeydown`, `onkeyup`) |    ✅   |
+| 20 | Forms & Input Handling                     |    ✅   |
+| 21 | Template Literals                          |    ✅   |
+| 22 | Mini Projects                              |    ✅   |
+
+
+
+🟡 Intermediate JavaScript
+
+
+| #  | Topic                                             |   Status   |
+| -- | ------------------------------------------------- | :--------: |
+| 23 | `while` Loop                                      |      ⏳     |
+| 24 | `for...of` Loop                                   |      ⏳     |
+| 25 | `for...in` Loop                                   |      ⏳     |
+| 26 | Array Methods (`push`, `pop`, `shift`, `unshift`) | 🟡 Partial |
+| 27 | `splice()`                                        |      ⏳     |
+| 28 | `slice()`                                         | 🟡 Partial |
+| 29 | `concat()`                                        |      ⏳     |
+| 30 | `includes()`                                      |      ⏳     |
+| 31 | `indexOf()`                                       |      ⏳     |
+| 32 | `find()`                                          |      ⏳     |
+| 33 | `filter()`                                        |      ⏳     |
+| 34 | `map()`                                           |      ⏳     |
+| 35 | `reduce()`                                        |      ⏳     |
+| 36 | `forEach()`                                       |      ⏳     |
+| 37 | Arrow Functions                                   |      ⏳     |
+| 38 | Callback Functions                                |      ⏳     |
+| 39 | Default Parameters                                |      ⏳     |
+| 40 | Rest Parameters (`...args`)                       |      ⏳     |
+| 41 | Spread Operator (`...array`)                      | 🟡 Partial |
+| 42 | Destructuring                                     |      ⏳     |
+| 43 | Object Methods                                    |      ⏳     |
+
+
+🔥 Advanced JavaScript
+
+| #  | Topic                                | Status |
+| -- | ------------------------------------ | :----: |
+| 44 | ES Modules (`import` / `export`)     |    ⏳   |
+| 45 | Classes                              |    ⏳   |
+| 46 | Constructors                         |    ⏳   |
+| 47 | OOP Principles                       |    ⏳   |
+| 48 | Inheritance                          |    ⏳   |
+| 49 | Error Handling (`try...catch`)       |    ⏳   |
+| 50 | Promises                             |    ⏳   |
+| 51 | `async/await`                        |    ⏳   |
+| 52 | Fetch API                            |    ⏳   |
+| 53 | Working with APIs                    |    ⏳   |
+| 54 | Timers (`setTimeout`, `setInterval`) |    ⏳   |
+| 55 | Regular Expressions (Basics)         |    ⏳   |
+
+
+🌍 Browser APIs
+
+| #  | Topic                                |   Status   |
+| -- | ------------------------------------ | :--------: |
+| 56 | `window` Object                      | 🟡 Partial |
+| 57 | `document` Object                    |      ✅     |
+| 58 | `querySelector()`                    |      ✅     |
+| 59 | `querySelectorAll()`                 |      ⏳     |
+| 60 | `classList`                          |      ⏳     |
+| 61 | DOM Traversing                       |      ⏳     |
+| 62 | Event Listeners (`addEventListener`) |      ⏳     |
+| 63 | Event Object                         |      ✅     |
+| 64 | Local Storage API                    |      ✅     |
+
+
+🛠 Mini Projects
+
+| Project             | Status |
+| ------------------- | :----: |
+| Coin Flip           |    ✅   |
+| Rock Paper Scissors |    ✅   |
+| Todo List           |    ✅   |
+| Calculator          |    ⏳   |
+| Weather App         |    ⏳   |
+| Notes App           |    ⏳   |
+| Expense Tracker     |    ⏳   |
+| Quiz App            |    ⏳   |
+| Shopping Cart       |    ⏳   |
+
+
+JavaScript Foundation     ████████████████████ 100% ✅
+
+Intermediate JavaScript   ███████░░░░░░░░░░░░ 35%
+
+Advanced JavaScript       ░░░░░░░░░░░░░░░░░░░ 0%
+
+Projects                  ████████░░░░░░░░░░ 40%
