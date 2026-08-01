@@ -6,9 +6,13 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 
 let isAutoPlaying = false;
 let intervalID;
+
+// const autoPlay = () => {
+
+// }
 function autoPlay() {
   if (!isAutoPlaying) {
-    intervalID = setInterval(function () {
+    intervalID = setInterval(() => {
       const playerMove = pickComputerMove();
       playGame(playerMove);
     }, 1000);
@@ -18,6 +22,18 @@ function autoPlay() {
     isAutoPlaying = false;
   }
 }
+
+document.querySelector(".js-rock-button").addEventListener("click", () => {
+  playGame("rock");
+});
+
+document.querySelector(".js-button-paper").addEventListener("click", () => {
+  playGame("paper");
+});
+
+document.addEventListener(".js-rock-scissros").addEventListener("click", () => {
+  playGame("scissros");
+});
 document.querySelector(".js-score").innerHTML =
   ` win:${score.wins}, losses: ${score.losse} ,Ties : ${score.tie}`;
 
@@ -32,7 +48,7 @@ function playGame(playerMove) {
     } else if (computerMove === "paper") {
       result = "You win";
     } else if (computerMove === "scissros") {
-      result = "Tie";
+      result = "You Tie";
     }
   } else if (playerMove === "paper") {
     if (computerMove === "rock") {
