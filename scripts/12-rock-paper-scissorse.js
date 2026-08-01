@@ -27,13 +27,26 @@ document.querySelector(".js-rock-button").addEventListener("click", () => {
   playGame("rock");
 });
 
-document.querySelector(".js-button-paper").addEventListener("click", () => {
+document.querySelector(".js-rock-button").addEventListener("click", () => {
   playGame("paper");
 });
 
-document.addEventListener(".js-rock-scissros").addEventListener("click", () => {
+document.querySelector(".js-rock-scissros").addEventListener("click", () => {
   playGame("scissros");
 });
+
+document.body.addEventListener("keydown", (event) => {
+  console.log(event.key);
+
+  if (event.key === "r") {
+    playGame("rock");
+  } else if (event.key === "p") {
+    playGame("paper");
+  } else if (event.key === "s") {
+    playGame("scissros");
+  }
+});
+
 document.querySelector(".js-score").innerHTML =
   ` win:${score.wins}, losses: ${score.losse} ,Ties : ${score.tie}`;
 
