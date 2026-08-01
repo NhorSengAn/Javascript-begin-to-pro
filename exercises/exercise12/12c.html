@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exerceise 12C</title>
+  </head>
+  <body>
+    <button onclick="updateButton()" class="js-button-start">Start</button>
+    <script>
+      function updateButton() {
+        const button = document.querySelector(".js-button-start");
+        setTimeout(() => {
+          button.innerHTML = "Finished!";
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

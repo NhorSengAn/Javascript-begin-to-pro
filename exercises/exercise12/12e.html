@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exerceise 12E</title>
+  </head>
+  <body>
+    <button class="js-button" onclick="displayMessage()">
+      Add to your cart
+    </button>
+    <p class="js-message"></p>
+    <script>
+      function displayMessage() {
+        const messageElement = document.querySelector(".js-message");
+
+        messageElement.innerHTML = "successful added to cart";
+        setTimeout(function () {
+          messageElement.innerHTML = "";
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

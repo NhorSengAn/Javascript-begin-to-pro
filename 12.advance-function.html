@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Functions</title>
+  </head>
+  <body>
+    <script>
+      function greeting() {
+        console.log("Hello");
+      }
+      greeting();
+
+      const function1 = function greeting() {
+        console.log("Hello");
+      };
+
+      const object1 = {
+        mum: 2,
+
+        fun: function () {
+          console.log("hello");
+        },
+      };
+
+      object1.fun();
+
+      function display(param) {
+        console.log(param);
+      }
+      display(11);
+
+      function run(param) {
+        console.log("Hello3");
+      }
+
+      run(function () {
+        console.log("My name is :");
+      });
+
+      run();
+
+      setTimeout(function () {
+        console.log("hello worlds");
+      }, 4000);
+
+      console.log("next line");
+      setInterval(function () {
+        console.log("Hello");
+      })[("Make dinner", "wash dishes", "watch youtube")].forEach(
+        function (value, index) {
+          if (value === "make dinner") {
+            return;
+          }
+          console.log(value);
+          console.log(index);
+        },
+      );
+    </script>
+  </body>
+</html>

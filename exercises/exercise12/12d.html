@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exerceise 12D</title>
+  </head>
+  <body>
+    <button class="js-button" onclick="displayMessage()">start</button>
+    <script>
+      function displayMessage() {
+        const button = document.querySelector(".js-button");
+
+        button.innerHTML = "loading.....";
+        setTimeout(function () {
+          button.innerHTML = "Finished!";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
